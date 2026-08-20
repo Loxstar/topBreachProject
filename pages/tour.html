@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tour.css" type="text/css">
+    <title>Tour Dates — twenty øne piløts</title>
+</head>
+
+<body id="things">
+    <header>
+        <nav class="nav-bar"> <img src="media/images/topIcon.jpg" class="icon" alt="TOP Icon">
+            <ul>
+                <li><a href="index.html" class="glitch-text" data-text="HOME">HOME</a></li>
+                <li><a href="tour.html" class="glitch-text" data-text="TOUR">TOUR</a></li>
+            </ul>
+        </nav>
+    </header> <!-- Live Concert Banner -->
+    <div class="tour-hero-banner"> <!-- topClip.mp4 link --> <video autoplay loop muted playsinline
+            class="hero-video-bg">
+            <source src="media/video/topClip.mp4" type="video/mp4">
+        </video> <!-- Dark Mask for White Font Readability -->
+        <div class="hero-overlay-darkness"></div> <!-- Title Layer -->
+        <div class="hero-title-group">
+            <h1 class="glitch-text" data-text="THE BREACH WORLD TOUR">THE BREACH WORLD TOUR</h1>
+            <p class="hero-subtitle">CYCLE TRANSMISSION OVERRIDE THE PERIMETER</p>
+        </div>
+    </div> <!-- Concert Image Gallery -->
+    <section class="tour-gallery-section">
+        <h3 class="section-title-accent">LIVE INTERCEPTIONS</h3>
+        <div class="image-gallery-grid"> <!-- Card 1 -->
+            <div class="gallery-card glitch-img-container"> <img src="media/images/redo2.jpeg"
+                    alt="Stage Show Production" class="gallery-photo">
+                <div class="card-caption">STAGE GRID 01 OVERRIDE</div>
+            </div> <!-- Card 2 -->
+            <div class="gallery-card glitch-img-container"> <img src="media/images/pilots01.png"
+                    alt="Arena Crowd Control" class="gallery-photo">
+                <div class="card-caption">SECTOR PIT CONFETTI EXTRACTION</div>
+            </div> <!-- Card 3 -->
+            <div class="gallery-card glitch-img-container"> <img src="media/images/topIcon.jpg" alt="Drum Performance"
+                    class="gallery-photo">
+                <div class="card-caption">TRANSMISSION RECEPTOR LIVE BEAT</div>
+            </div>
+        </div>
+    </section> <!-- Tour Dates and Tickets -->
+    <main class="tour-dates-container">
+        <h2 class="vertical">UPCOMING TRANSMISSIONS</h2>
+        <div class="ticket-grid"> <!-- Header Row Labels -->
+            <div class="ticket-header">
+                <div>LOCATION TIMEFRAME</div>
+                <div>VENUE STATION</div>
+                <div class="text-right">ACCESS STATUS</div>
+            </div> <!-- Tour Row 1 -->
+            <div class="ticket-row">
+                <div class="date-info"> <span class="day">OCT 17, 2026</span> <span class="city">COLUMBUS, OH</span>
+                </div>
+                <div class="venue-info">OHIO STADIUM (HOMETOWN RETURN)</div>
+                <div class="action-cell"> <a href="#" class="ticket-btn sold-out">TRANSMISSION FULL</a> </div>
+            </div> <!-- Tour Row 2 -->
+            <div class="ticket-row">
+                <div class="date-info"> <span class="day">NOV 04, 2026</span> <span class="city">LOS ANGELES, CA</span>
+                </div>
+                <div class="venue-info">CRYPTO.COM ARENA</div>
+                <div class="action-cell"> <a href="#" class="ticket-btn purchase">SECURE ENTRY</a> </div>
+            </div> <!-- Tour Row 3 -->
+            <div class="ticket-row">
+                <div class="date-info"> <span class="day">NOV 12, 2026</span> <span class="city">CHICAGO, IL</span>
+                </div>
+                <div class="venue-info">UNITED CENTER</div>
+                <div class="action-cell"> <a href="#" class="ticket-btn purchase">SECURE ENTRY</a> </div>
+            </div> <!-- Tour Row 4 -->
+            <div class="ticket-row">
+                <div class="date-info"> <span class="day">DEC 01, 2026</span> <span class="city">LONDON, UK</span>
+                </div>
+                <div class="venue-info">THE O2 ARENA</div>
+                <div class="action-cell"> <a href="#" class="ticket-btn sold-out">TRANSMISSION FULL</a> </div>
+            </div> <!-- Tour Row 5 -->
+            <div class="ticket-row">
+                <div class="date-info"> <span class="day">DEC 08, 2026</span> <span class="city">PARIS, FR</span> </div>
+                <div class="venue-info">ACCOR ARENA</div>
+                <div class="action-cell"> <a href="#" class="ticket-btn purchase">SECURE ENTRY</a> </div>
+            </div>
+        </div>
+    </main> <!-- Registration Form -->
+    <section class="vip-registration-section">
+        <div class="vip-form-wrapper">
+            <div class="terminal-header"> <span class="terminal-status-glow"></span> AUTHENTICATING CLIQUE NETWORK
+                RECEPTOR </div>
+            <h3>JOIN THE BREACH PERIMETER</h3>
+            <p class="form-desc">Provide your global grid coordinates below. Unauthorized updates, local tour
+                transmission signals, and early access clearance forms will be pushed directly to your proxy inbox.</p>
+            <form class="vip-terminal-form" onsubmit="event.preventDefault(); triggerFormSuccess();">
+                <div class="form-grid">
+                    <div class="input-container"> <input type="text" id="fan-name" required placeholder=" "
+                            autocomplete="off"> <label for="fan-name">IDENTIFIER (YOUR NAME)</label> </div>
+                    <div class="input-container"> <input type="email" id="fan-email" required placeholder=" "
+                            autocomplete="off"> <label for="fan-email">PROXY PATHWAY (EMAIL ADDRESS)</label> </div>
+                </div>
+                <div class="checkbox-container"> <input type="checkbox" id="lore-consent" required> <label
+                        for="lore-consent">I confirm that I am a part of the fracture and consent to receiving
+                        unencrypted transmissions from Trench.</label> </div> <button type="submit"
+                    class="terminal-submit-btn">OVERRIDE PERIMETER</button>
+            </form> <!-- Hidden Terminal Screen State -->
+            <div id="form-success-screen" class="terminal-success-message hidden">
+                <div class="success-alert">ACCESS GRANTED. FRACTURE CONFIRMED.</div>
+                <p>Your pathway coordinates have been recorded in the regional ledger. Watch for fluctuation frequencies
+                    in your proxy inbox. Do not look back toward Dema.</p>
+            </div>
+        </div>
+    </section> <!-- Terminal Script -->
+    <script
+        type="text/javascript"> function triggerFormSuccess() { document.querySelector('.vip-terminal-form').style.display = 'none'; document.getElementById('form-success-screen').classList.remove('hidden'); } </script>
+    <footer class="footer">
+        <div class="socials"> <a data-track="youtube-ftr" target="_blank" href="https://youtube.com"
+                class="youtube">YouTube</a> <a data-track="instagram-ftr" target="_blank" href="https://instagram.com"
+                class="instagram">Instagram</a> <a data-track="twitter-ftr" target="_blank" href="https://twitter.com"
+                class="twitter">X (Twitter)</a> <a data-track="facebook-ftr" target="_blank" href="https://facebook.com"
+                class="facebook">Facebook</a> <a data-track="tiktok-ftr" target="_blank" href="https://tiktok.com"
+                class="tiktok">TikTok</a> </div>
+        <div class="copywright">
+            <p>&copy; 2026 Fueled by Ramen</p>
+        </div>
+    </footer> <!-- Secret Modal Overlay Panel -->
+    <div id="clancy-easter-egg" class="easter-overlay hidden">
+        <div class="easter-close-btn" onclick="closeEasterEgg()">&times; CLOSE TRANSMISSION</div>
+        <div class="clancy-letter-wrapper">
+            <div class="dema-stamp">RESTRICTED - ARCHIVE 012-B</div>
+            <h2>UNAUTHORIZED ACCESS DETECTED</h2>
+            <p class="letter-date">Transmitted from Trench</p>
+            <div class="letter-body">
+                <p>They think they have contained the spill. They think the walls of Dema can hold what we built out
+                    here in the dark. But the seals are cracked. The foundation is shifting beneath their feet.</p>
+                <p>Tyler knows what happens when the contract is signed. Josh is already at the perimeter. If you are
+                    reading this, you are part of the fracture. Do not let them fix the line. The breach has begun.</p>
+                <div class="clancy-signature">| - / <br><span>Clancy</span></div>
+            </div>
+        </div>
+    </div>
+    <script
+        type="text/javascript"> const secretCode = 'breach'; let inputSequence = ''; document.addEventListener('keydown', (e) => { if (e.key.length === 1) { inputSequence += e.key.toLowerCase(); if (inputSequence.length > secretCode.length) { inputSequence = inputSequence.slice(-secretCode.length); } if (inputSequence === secretCode) { document.getElementById('clancy-easter-egg').classList.remove('hidden'); inputSequence = ''; } } }); function closeEasterEgg() { document.getElementById('clancy-easter-egg').classList.add('hidden'); } </script>
+</body>
+
+</html>
