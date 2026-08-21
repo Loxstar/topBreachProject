@@ -219,7 +219,7 @@ body {
 
 .glitch-img-container:hover::after {
     opacity: 0.35;
-    background: var(--accent-red);
+    background: var(--accent-white);
     mix-blend-mode: color-burn;
     animation: glitch-anim-2 0.5s infinite linear alternate-reverse;
 }
@@ -311,33 +311,36 @@ body {
 
 /* Era Hover Custom Color Glows */
 .era-self-titled:hover .timeline-content {
-    border-color: #06b6d4;
-    box-shadow: 0 0 25px rgba(6, 182, 212, 0.25);
+    border-color: #74377F;
+    box-shadow: 0 0 25px rgba(116, 55, 127, 0.4);
 }
 
 .era-self-titled:hover .timeline-badge {
-    background: #06b6d4;
-    box-shadow: 0 0 15px #06b6d4;
+    background-color: #74377F;
+    border-color: #74377F;
+    box-shadow: 0 0 15px #74377F
 }
 
 .era-rab:hover .timeline-content {
-    border-color: #2563eb;
-    box-shadow: 0 0 25px rgba(37, 99, 235, 0.25);
+    border-color: #FFFFFF;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5)
 }
 
 .era-rab:hover .timeline-badge {
-    background: #2563eb;
-    box-shadow: 0 0 15px #2563eb;
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+    box-shadow: 0 0 15px #FFFFFF;
 }
 
 .era-vessel:hover .timeline-content {
-    border-color: #cbd5e1;
-    box-shadow: 0 0 25px rgba(203, 213, 225, 0.25);
+    border-color: #888888;
+    box-shadow: 0 0 25px rgba(136, 136, 136, 0.4)
 }
 
 .era-vessel:hover .timeline-badge {
-    background: #cbd5e1;
-    box-shadow: 0 0 15px #cbd5e1;
+    background: #888888;
+    border-color: #888888;
+    box-shadow: 0 0 15px #888888;
 }
 
 .era-blurryface:hover .timeline-content {
@@ -347,37 +350,41 @@ body {
 
 .era-blurryface:hover .timeline-badge {
     background: var(--accent-red);
+    border-color: var(--accent-red);
     box-shadow: 0 0 15px var(--accent-red);
 }
 
 .era-trench:hover .timeline-content {
-    border-color: #eab308;
-    box-shadow: 0 0 25px rgba(234, 179, 8, 0.3);
+    border-color: #525c35;
+    box-shadow: 0 0 25px rgba(82, 92, 53, 0.4);
 }
 
 .era-trench:hover .timeline-badge {
-    background: #eab308;
-    box-shadow: 0 0 15px #eab308;
+    background-color: #525c35;
+    border-color: #525c35;
+    box-shadow: 0 0 15px #525c35;
 }
 
 .era-sai:hover .timeline-content {
-    border-color: #f472b6;
-    box-shadow: 0 0 25px rgba(244, 114, 182, 0.25);
+    border-color: #00F2FE;
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.3);
 }
 
 .era-sai:hover .timeline-badge {
-    background: #f472b6;
-    box-shadow: 0 0 15px #f472b6;
+    background: #00F2FE;
+    border-color: #00F2FE;
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.3);
 }
 
 .era-clancy:hover .timeline-content {
-    border-color: #ea580c;
-    box-shadow: 0 0 25px rgba(234, 88, 12, 0.35);
+    border-color: #FFE600;
+    box-shadow: 0 0 25px rgba(224, 142, 53, 0.4);
 }
 
 .era-clancy:hover .timeline-badge {
-    background: #ea580c;
-    box-shadow: 0 0 15px #ea580c;
+    background: #FFE600;
+    border-color: #FFE600;
+    box-shadow: 0 0 15px #FFE600;
 }
 
 /* Audio Visualizer Component */
@@ -581,6 +588,7 @@ body {
     font-weight: 700;
 }
 
+/* Clancy letter */
 .clancy-letter-wrapper h2 {
     color: var(--text-light);
     font-size: 1.5rem;
@@ -590,36 +598,25 @@ body {
     text-transform: uppercase;
 }
 
-.letter-date {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+.gallery-card.transmission-card {
+    width: 100%;
+    background-color: #000000;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Handwritten Scrawled Letter Typography */
+.gallery-card.transmission-card .gallery-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .letter-body p {
-    font-family: 'Rock Salt', cursive;
-    color: #e4e4e7;
-    font-size: 0.95rem;
-    line-height: 2.2;
-    margin-bottom: 2rem;
-    text-align: left;
-    letter-spacing: -0.5px;
-}
-
-.clancy-signature {
-    font-family: 'Rock Salt', cursive;
-    margin-top: 3rem;
-    font-size: 1.2rem;
-    color: var(--text-light);
-    line-height: 1.6;
-}
-
-.clancy-signature span {
-    font-size: 0.85rem;
-    color: var(--text-muted);
+    margin-bottom: 24px;
+    letter-spacing: -0.2px;
+    text-align: justify;
 }
 
 /* Footer Matrix Layout */
